@@ -1,0 +1,26 @@
+/*
+ 	Date: 2016-01-11
+*/
+p.tbspacer {margin:0.5em 0;clear:both;}/* margin-top=margin-bottom=0.5em,else margin=0 */
+p.spacer {margin:0.5em;clear:both;}
+.floatRight {float:right;}
+.floatLeft  {float:left;}
+.border {border:black solid 1px;}
+#visibleTopLabel { font-weight:bold;margin:0;padding:0;color:green; }
+#visibleBottomLabel { font-weight:bold;margin:0;padding:0;color:red; }
+/* css/basicheaderfooter.css
+#header
+#headerClear
+#footer
+#footerClear
+*/
+
+#appIcon  {margin:0;padding:0;float:left;background-color:#3f4f5f;}
+#appTitle {margin:0;padding:0;display:inline-block;}
+#menuIcon {margin:0;padding:0;float:right;}
+#exitApp  {margin:0;float:right;}
+#content  {margin:0.2em;}
+#copyright {}
+.copyright {padding:5px;align:left;font-style:italic;font-size:small;}
+
+#appstate {}

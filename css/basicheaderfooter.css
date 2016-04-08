@@ -1,0 +1,70 @@
+#header {
+	margin:0;
+	display:block; /* none, inline, block, list-item */
+	visibility:visible; /* visible, hidden, collapes */
+	/* below borrowed idea */
+	border: 1px solid;
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	/* fixed-poistion header-required start */
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	/* fixed-poistion header-required end */
+	/* configure per client */
+	/* 'background' is required, else it is transparent */
+	background:lightblue;
+	height:50px;
+	padding:0em;
+	font-size: x-large;
+    text-align:center;
+}
+/* 
+NOTE: The next 'id', '#headerClear' - which is a <div>, fixes the text layout
+for the header (#header).
+This is a trick to start the text below the header. If this <div> is NOT
+added, then the text below #header is hidden under the #header.
+Notice how #headerClear copies (and not inherts) the style of the other 'div's.
+Notice also how the 'position' in #headerClear is not 'fixed', so it goes to it's
+initial value (static) and flows with the text. 'position' does not inherit.
+*/
+#headerClear {
+	margin:0;
+	display:block;
+	visibility:hidden; /* hidden, not collape */
+	/* configure per client */
+	height:50px;
+	padding:0em;
+	font-size: x-large;
+    text-align:center;
+}
+#footer {
+	margin:0;
+	display:block;
+	visibility:visible;
+	/* below borrowed idea */
+	border: 1px solid;
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	/* footer-required start */
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	/* footer-required end */
+	/* configure per client */
+	background:lightblue;
+	height:50px;
+	padding:0;
+	font-size: small;
+    text-align:center;
+}
+#footerClear {
+	margin:0;
+	display:block;
+	visibility:hidden; /* hidden, not collape */
+	/* configure per client */
+	height:50px;
+	padding:0;
+	font-size: small;
+    text-align:center;
+}

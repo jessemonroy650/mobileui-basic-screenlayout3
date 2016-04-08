@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf-8">
+	<TITLE>Basic Screen Layout</TITLE>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Security-Policy"
+             content="default-src *;style-src 'self' ;script-src 'self';" />
+    <link rel=stylesheet href=css/buttons.css />
+	<link rel=stylesheet href=css/basicheaderfooter.css />
+	<link rel=stylesheet href=default.css />
+	<link rel=stylesheet href=app.css />
+    <!-- <link rel=stylesheet href=content.css /> -->
+	<style></style>
+</head>
+<body>
+
+<!-- VIEW HEADER START -->
+<div id=header>
+    <img id=appIcon src=res/icons/android/icon-48-mdpi.png>
+    <div id=appTitle>Mobile UI</div>
+    <img id=menuIcon src=images/3menubars_black.png>
+</div>
+<div id=headerClear></div>
+<!-- VIEW HEADER END -->
+
+<div id=message class=hidden></div>
+
+
+<!-- APP CONFIGURATION START -->
+<div id=appConfig class=hidden>
+    <div class="button button-block button-action">Cordova <span id=cordova></span></div>
+    <div class="button button-block button-action">model <span id=model></span></div>
+    <div class="button button-block button-highlight">Version <span id=version>version</span></div>
+    <p class=spacer/>
+    <button id=exitApp class="floatRight button button-pill button-primary button-large">Exit</button>
+</div>
+<!-- APP CONFIGURATION END -->
+
+<!-- MENU CONFIGURATION START -->
+<div id=menuConfig class=hidden>
+    Menu Configuration
+</div>
+<!-- MENU CONFIGURATION END -->
+
+<!-- CONTENT START -->
+<div id=content>
+	<span id=visibleTopLabel>visible top edge content</span>
+	<p class=tbspacer />
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+	<p class=spacer/>
+
+	<span id=visibleBottomLabel>visible bottom edge content</span>
+</div>
+<!-- CONTENT END -->
+
+<div id=appState class=hidden></div>
+
+<!-- VIEW FOOTER START -->
+<div id=footerClear></div>
+<div id=footer class=copyright>
+    <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2016</span>
+</div>
+<!-- VIEW FOOTER END -->
+    <!-- ***Javascript * Javascript * Javascript*** -->
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/localstorage.js"></script>
+    <script type="text/javascript" src="js/zepto-1.1.6.js"></script>
+    <script type="text/javascript" src="buttons.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+    </script>
+</BODY>
+</HTML>
